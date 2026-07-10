@@ -1,0 +1,7 @@
+# Salidas locales generadas por skills
+graphify-out/
+*.log
+
+# Basura de SO
+Thumbs.db
+.DS_Store
