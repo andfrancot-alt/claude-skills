@@ -37,6 +37,18 @@ Esta carpeta vive en `~/.claude/skills/` — Claude Code carga automáticamente 
 | [seedance-2-0](seedance-2-0/SKILL.md) | Clips cinematográficos con ByteDance Seedance 2.0 (audio nativo, multi-shot). |
 | [ltx2](ltx2/SKILL.md) | Text-to-video / image-to-video con LTX-2.3 22B. |
 
+### UI/UX — diseño (origen: [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill), auditada 2026-07-14: sin red no documentada, sin inyección, scripts limpios)
+
+| Skill | Descripción |
+|-------|-------------|
+| [ui-ux-pro-max](ui-ux-pro-max/SKILL.md) | Base de datos local consultable: 84 estilos, 192 paletas, 74 pares tipográficos, guías UX, presets GSAP y charts para 22 stacks. |
+| [design](design/SKILL.md) | Generación de logos, iconos, CIP y material social con guías de prompt. |
+| [design-system](design-system/SKILL.md) | Tokens de diseño, fondos de slides y lógica de color/layout. |
+| [ui-styling](ui-styling/SKILL.md) | Estilado UI con Tailwind/shadcn (incluye `shadcn_add.py`). |
+| [brand](brand/SKILL.md) | Guías de marca: identidad visual, voz, tipografía, sincronización a tokens. |
+| [slides](slides/SKILL.md) | Presentaciones: layouts, copywriting y plantillas HTML. |
+| [banner-design](banner-design/SKILL.md) | Banners: tamaños estándar y estilos. |
+
 Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash`), `heygen` (deprecada), y las acopladas al framework HyperFrames (`music-to-video`, `website-to-video`, `motion-graphics`, `kling-official`, `video-toolkit`, `remotion`), que no funcionan fuera del repo original.
 
 ## Uso en otra máquina
