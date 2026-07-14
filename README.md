@@ -49,6 +49,16 @@ Esta carpeta vive en `~/.claude/skills/` — Claude Code carga automáticamente 
 | [slides](slides/SKILL.md) | Presentaciones: layouts, copywriting y plantillas HTML. |
 | [banner-design](banner-design/SKILL.md) | Banners: tamaños estándar y estilos. |
 
+### Animación UI (origen: [Emil Kowalski](https://skills.sh/emilkowalski/skills), auditada 2026-07-14: solo markdown, sin código, con defensa anti-inyección propia)
+
+| Skill | Descripción |
+|-------|-------------|
+| [animation-vocabulary](animation-vocabulary/SKILL.md) | Glosario inverso: describe un efecto de motion vago y devuelve su término exacto. |
+| [apple-design](apple-design/SKILL.md) | El enfoque de Apple de diseño y motion físico/fluido, traducido a la web. |
+| [emil-design-eng](emil-design-eng/SKILL.md) | Filosofía de Emil Kowalski sobre pulido de UI y detalles invisibles. |
+| [improve-animations](improve-animations/SKILL.md) | Auditoría priorizada del motion de un codebase con planes de implementación (read-only). |
+| [review-animations](review-animations/SKILL.md) | Review de código de animación con barra alta (solo invocación explícita). |
+
 Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash`), `heygen` (deprecada), y las acopladas al framework HyperFrames (`music-to-video`, `website-to-video`, `motion-graphics`, `kling-official`, `video-toolkit`, `remotion`), que no funcionan fuera del repo original.
 
 ## Uso en otra máquina
