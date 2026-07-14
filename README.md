@@ -65,6 +65,20 @@ Esta carpeta vive en `~/.claude/skills/` — Claude Code carga automáticamente 
 |-------|-------------|
 | [huashu-design](huashu-design/SKILL.md) | 花叔Design: prototipos HTML de alta fidelidad, slides, animación, visualización y crítica experta. Incluye SFX/BGM, exportación PDF/PPTX/MP4 (requiere `npm install` en su carpeta) y TTS Doubao opcional (clave propia en `.env`, texto va a ByteDance). Skill en chino; opera en cualquier idioma. |
 
+### Web/React/Vercel (origen: [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills), auditada 2026-07-14)
+
+| Skill | Descripción |
+|-------|-------------|
+| [react-best-practices](react-best-practices/SKILL.md) | 40+ reglas de rendimiento React/Next.js de Vercel Engineering. |
+| [web-design-guidelines](web-design-guidelines/SKILL.md) | Guías de diseño web. |
+| [writing-guidelines](writing-guidelines/SKILL.md) | Guías de redacción. |
+| [composition-patterns](composition-patterns/SKILL.md) | Patrones de composición de componentes React. |
+| [react-view-transitions](react-view-transitions/SKILL.md) | View Transitions API en React. |
+| [react-native-skills](react-native-skills/SKILL.md) | Buenas prácticas React Native / Expo. |
+| [vercel-optimize](vercel-optimize/SKILL.md) | Auditoría de costo/rendimiento de proyectos Vercel (análisis estático local). |
+| [deploy-to-vercel](deploy-to-vercel/SKILL.md) | ⚠️ Publica: sube el proyecto (sin .env/.git/node_modules) a un servicio de Vercel y genera URL pública. Confirmar antes de ejecutar. |
+| [vercel-cli-with-tokens](vercel-cli-with-tokens/SKILL.md) | ⚠️ Maneja VERCEL_TOKEN desde .env; el token puede quedar en el transcript. |
+
 Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash`), `heygen` (deprecada), y las acopladas al framework HyperFrames (`music-to-video`, `website-to-video`, `motion-graphics`, `kling-official`, `video-toolkit`, `remotion`), que no funcionan fuera del repo original.
 
 ## Uso en otra máquina
