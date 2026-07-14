@@ -59,6 +59,12 @@ Esta carpeta vive en `~/.claude/skills/` — Claude Code carga automáticamente 
 | [improve-animations](improve-animations/SKILL.md) | Auditoría priorizada del motion de un codebase con planes de implementación (read-only). |
 | [review-animations](review-animations/SKILL.md) | Review de código de animación con barra alta (solo invocación explícita). |
 
+### Prototipado y diseño HTML (auditada 2026-07-14)
+
+| Skill | Descripción |
+|-------|-------------|
+| [huashu-design](huashu-design/SKILL.md) | 花叔Design: prototipos HTML de alta fidelidad, slides, animación, visualización y crítica experta. Incluye SFX/BGM, exportación PDF/PPTX/MP4 (requiere `npm install` en su carpeta) y TTS Doubao opcional (clave propia en `.env`, texto va a ByteDance). Skill en chino; opera en cualquier idioma. |
+
 Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash`), `heygen` (deprecada), y las acopladas al framework HyperFrames (`music-to-video`, `website-to-video`, `motion-graphics`, `kling-official`, `video-toolkit`, `remotion`), que no funcionan fuera del repo original.
 
 ## Uso en otra máquina
