@@ -12,6 +12,7 @@ Esta carpeta vive en `~/.claude/skills/` — Claude Code carga automáticamente 
 |-------|-------------|
 | [graphify](graphify/SKILL.md) | Convierte cualquier input (código, docs, papers, imágenes, videos) en un grafo de conocimiento persistente, con consultas vía `graphify query`. |
 | [grill-me](grill-me/SKILL.md) | Entrevista implacable sobre un plan o diseño hasta lograr entendimiento compartido, recorriendo el árbol de decisiones. |
+| [skyreels-api](skyreels-api/SKILL.md) | SkyReels V3 vía APIs hospedadas (WaveSpeed/PiAPI): reference-to-video, extensión de video, avatares. Requiere WAVESPEED_API_KEY; confirma costo antes de cada llamada. |
 
 ### Video — generación y edición (origen: [OpenMontage](https://github.com/calesthio/OpenMontage), MIT; auditadas 2026-07-14)
 
