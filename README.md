@@ -38,6 +38,12 @@ Esta carpeta vive en `~/.claude/skills/` — Claude Code carga automáticamente 
 | [seedance-2-0](seedance-2-0/SKILL.md) | Clips cinematográficos con ByteDance Seedance 2.0 (audio nativo, multi-shot). |
 | [ltx2](ltx2/SKILL.md) | Text-to-video / image-to-video con LTX-2.3 22B. |
 
+### Visión (origen: [davepoon/buildwithclaude → give-claude-eyes](https://github.com/davepoon/buildwithclaude/tree/HEAD/plugins/give-claude-eyes), auditada 2026-07-14)
+
+| Skill | Descripción |
+|-------|-------------|
+| [qwen-vision](qwen-vision/SKILL.md) | Entendimiento de video/imagen vía Qwen Omni (API DashScope de Alibaba). Requiere DASHSCOPE_API_KEY y `pip install dashscope`. ⚠️ Sube el archivo multimedia a la nube de Alibaba (Singapur por defecto). Rutas adaptadas de plugin a skill standalone. |
+
 ### UI/UX — diseño (origen: [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill), auditada 2026-07-14: sin red no documentada, sin inyección, scripts limpios)
 
 | Skill | Descripción |
