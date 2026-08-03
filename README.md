@@ -24,7 +24,7 @@ Esta carpeta vive en `~/.claude/skills/` — Claude Code carga automáticamente 
 | [ffmpeg](ffmpeg/SKILL.md) | Procesamiento de video/audio con FFmpeg y preparación de assets para Remotion. |
 | [video-download](video-download/SKILL.md) | Descarga de video/audio/subtítulos con yt-dlp (YouTube y 1000+ sitios). |
 | [video-understand](video-understand/SKILL.md) | Análisis local de contenido: frames con ffmpeg + transcripción Whisper. |
-| [remotion-best-practices](remotion-best-practices/SKILL.md) | Buenas prácticas de Remotion (video programático en React). |
+| remotion-* (11 skills) | Suite **oficial** de [remotion-dev/skills](https://github.com/remotion-dev/skills) (reemplazó la copia de OpenMontage el 2026-07-15): best-practices (router), create, render, captions, multimedia, markup, interactivity, maps, docs, saas, upgrade. Video programático en React, render local. |
 
 **Con API de nube (requieren clave HeyGen / fal.ai / etc.):**
 
