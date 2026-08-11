@@ -88,6 +88,12 @@ Esta carpeta vive en `~/.claude/skills/` — Claude Code carga automáticamente 
 
 Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash`), `heygen` (deprecada), y las acopladas al framework HyperFrames (`music-to-video`, `website-to-video`, `motion-graphics`, `kling-official`, `video-toolkit`, `remotion`), que no funcionan fuera del repo original.
 
+### Documentos (herramienta oficial de Microsoft, verificada por diff contra microsoft/markitdown el 2026-07-15)
+
+| Skill | Descripción |
+|-------|-------------|
+| [markitdown](markitdown/SKILL.md) | Wrapper propio del CLI MarkItDown (pip, local): DOCX/PPTX/XLSX/PDF/EPUB/imágenes OCR/audio → Markdown. Ideal para alimentar graphify y lotes. |
+
 ## Uso en otra máquina
 
 ```sh
@@ -101,9 +107,3 @@ git clone git@github.com:andfrancot-alt/claude-skills.git ~/.claude/skills
 - Una skill = una carpeta con `SKILL.md` (frontmatter `name` + `description`) y opcionalmente `references/`, `scripts/`, `assets/`.
 - Las salidas generadas por las skills (p. ej. `graphify-out/`) no se versionan aquí; viven en cada proyecto.
 - Skills específicas de un proyecto van en el `.claude/skills/` de ese proyecto, no en este repo.
-
-### Documentos (herramienta oficial de Microsoft, verificada por diff contra microsoft/markitdown el 2026-07-15)
-
-| Skill | Descripción |
-|-------|-------------|
-| [markitdown](markitdown/SKILL.md) | Wrapper propio del CLI MarkItDown (pip, local): DOCX/PPTX/XLSX/PDF/EPUB/imágenes OCR/audio → Markdown. Ideal para alimentar graphify y lotes. |
