@@ -113,6 +113,12 @@ Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash
 | [scientific-visualization](scientific-visualization/SKILL.md) | Visualización científica. |
 | [infographics](infographics/SKILL.md) | Infografías. |
 
+### SEO (recuperada del historial de [nguyenthienthanh/aura-frog](https://github.com/nguyenthienthanh/aura-frog) commit 46a97a10; auditada 2026-07-15)
+
+| Skill | Descripción |
+|-------|-------------|
+| [seo-expert](seo-expert/SKILL.md) | SEO técnico: meta tags, Open Graph, Core Web Vitals, JSON-LD (Organization/Article/Product/FAQ), sitemap y robots.txt, Next.js Metadata API. Solo documentación, sin código. |
+
 ## Uso en otra máquina
 
 ```sh
