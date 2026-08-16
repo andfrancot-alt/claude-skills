@@ -94,6 +94,25 @@ Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash
 |-------|-------------|
 | [markitdown](markitdown/SKILL.md) | Wrapper propio del CLI MarkItDown (pip, local): DOCX/PPTX/XLSX/PDF/EPUB/imágenes OCR/audio → Markdown. Ideal para alimentar graphify y lotes. |
 
+### Ciencia y clínica (origen: [k-dense-ai/scientific-agent-skills](https://github.com/k-dense-ai/scientific-agent-skills) ⭐33k, MIT, auditada 2026-07-15; subset de 14 de 161 — el resto se instala bajo demanda)
+
+| Skill | Descripción |
+|-------|-------------|
+| [clinical-reports](clinical-reports/SKILL.md) | Reportes clínicos estructurados. |
+| [clinical-decision-support](clinical-decision-support/SKILL.md) | Apoyo a decisión clínica (siempre con criterio médico humano). |
+| [treatment-plans](treatment-plans/SKILL.md) | Planes de tratamiento estructurados. |
+| [neurokit2](neurokit2/SKILL.md) | Señales fisiológicas (ECG, EEG, respiración) — relevante para polisomnografía. |
+| [literature-review](literature-review/SKILL.md) | Revisión de literatura. ⚠️ Su CLI opcional ofrece `curl\|bash`; usar la alternativa `uv tool install`. |
+| [paper-lookup](paper-lookup/SKILL.md) | Búsqueda de papers. |
+| [scientific-writing](scientific-writing/SKILL.md) | Redacción científica. |
+| [citation-management](citation-management/SKILL.md) | Gestión de citas y referencias. |
+| [statistical-analysis](statistical-analysis/SKILL.md) | Análisis estadístico. |
+| [statistical-power](statistical-power/SKILL.md) | Cálculo de poder estadístico y tamaños de muestra. |
+| [exploratory-data-analysis](exploratory-data-analysis/SKILL.md) | EDA sistemático. |
+| [experimental-design](experimental-design/SKILL.md) | Diseño de experimentos y estudios. |
+| [scientific-visualization](scientific-visualization/SKILL.md) | Visualización científica. |
+| [infographics](infographics/SKILL.md) | Infografías. |
+
 ## Uso en otra máquina
 
 ```sh
