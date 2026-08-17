@@ -113,6 +113,17 @@ Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash
 | [scientific-visualization](scientific-visualization/SKILL.md) | Visualización científica. |
 | [infographics](infographics/SKILL.md) | Infografías. |
 
+### Negocio y marketing (origen: [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) ⭐24.5k, MIT, auditada 2026-07-16; subset de 18 de 345 — el resto bajo demanda)
+
+| Skill | Descripción |
+|-------|-------------|
+| copywriting, content-strategy, email-sequence, ad-creative | Producción de marketing: copy de páginas, estrategia de contenido, secuencias de email, creatividades de ads. |
+| aeo, form-cro, analytics-tracking, campaign-analytics | Optimización: citación por LLMs (complementa seo-expert), formularios, GA4/GTM, atribución y ROI. |
+| churn-prevention, customer-success-manager | Retención: flujos de cancelación, dunning, health scores (aplicable a pacientes recurrentes). |
+| product-manager-toolkit, product-analytics, competitive-teardown | Producto: RICE, PRDs, KPIs, análisis competitivo. |
+| process-mapper, capacity-planner | Operación: mapeo BPMN de procesos y planeación de capacidad (Erlang-C) — relevante para agenda/equipos de la clínica. |
+| financial-analyst, pricing-strategist, weekly-review | Finanzas, estrategia de precios y revisión semanal. |
+
 ### Decisiones (origen: [aiwithremy/claude-skills-llm-council](https://github.com/aiwithremy/claude-skills-llm-council) ⭐1.6k, auditada 2026-07-15; sin licencia declarada)
 
 | Skill | Descripción |
