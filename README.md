@@ -113,6 +113,12 @@ Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash
 | [scientific-visualization](scientific-visualization/SKILL.md) | Visualización científica. |
 | [infographics](infographics/SKILL.md) | Infografías. |
 
+### Decisiones (origen: [aiwithremy/claude-skills-llm-council](https://github.com/aiwithremy/claude-skills-llm-council) ⭐1.6k, auditada 2026-07-15; sin licencia declarada)
+
+| Skill | Descripción |
+|-------|-------------|
+| [llm-council](llm-council/SKILL.md) | Consejo de 5 asesores (subagentes de Claude con lentes distintas) + revisión por pares anónima + veredicto del chairman. Método Karpathy, 100% local a la sesión. Trigger: "council this", "debate esto". Complementa a grill-me. |
+
 ### SEO (recuperada del historial de [nguyenthienthanh/aura-frog](https://github.com/nguyenthienthanh/aura-frog) commit 46a97a10; auditada 2026-07-15)
 
 | Skill | Descripción |
