@@ -136,6 +136,10 @@ Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash
 |-------|-------------|
 | [seo-expert](seo-expert/SKILL.md) | SEO técnico: meta tags, Open Graph, Core Web Vitals, JSON-LD (Organization/Article/Product/FAQ), sitemap y robots.txt, Next.js Metadata API. Solo documentación, sin código. |
 
+## Plugins instalados (fuera de este repo — viven en ~/.claude/plugins)
+
+- **codex@openai-codex** ([openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc), oficial de OpenAI, auditado 2026-07-16) — usar Codex desde Claude Code: `/codex:review`, `/codex:transfer`, review-gate opcional al Stop. Requiere `npm install -g @openai/codex` + cuenta OpenAI + `/codex:setup`. ⚠️ Al usarlo, código/diffs/contexto viajan a OpenAI. Reinstalar en otra máquina: `claude plugin marketplace add openai/codex-plugin-cc && claude plugin install codex@openai-codex`.
+
 ## Uso en otra máquina
 
 ```sh
