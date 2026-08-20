@@ -88,11 +88,13 @@ Esta carpeta vive en `~/.claude/skills/` — Claude Code carga automáticamente 
 
 Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash`), `heygen` (deprecada), y las acopladas al framework HyperFrames (`music-to-video`, `website-to-video`, `motion-graphics`, `kling-official`, `video-toolkit`, `remotion`), que no funcionan fuera del repo original.
 
-### Documentos (herramienta oficial de Microsoft, verificada por diff contra microsoft/markitdown el 2026-07-15)
+### Herramientas locales envueltas en skill propia (repos oficiales verificados; todo procesa local)
 
 | Skill | Descripción |
 |-------|-------------|
-| [markitdown](markitdown/SKILL.md) | Wrapper propio del CLI MarkItDown (pip, local): DOCX/PPTX/XLSX/PDF/EPUB/imágenes OCR/audio → Markdown. Ideal para alimentar graphify y lotes. |
+| [markitdown](markitdown/SKILL.md) | CLI MarkItDown de Microsoft: DOCX/PPTX/XLSX/PDF/EPUB/imágenes OCR/audio → Markdown. Ideal para alimentar graphify y lotes. |
+| [rembg](rembg/SKILL.md) | Quitar fondos de imágenes (danielgatis/rembg, U2-Net local). Primera ejecución descarga modelo ~170 MB. |
+| [transcribe-audio](transcribe-audio/SKILL.md) | Transcripción local de audio con faster-whisper (SYSTRAN), 4x más rápido que Whisper clásico en CPU. Para video usar video-understand. |
 
 ### Ciencia y clínica (origen: [k-dense-ai/scientific-agent-skills](https://github.com/k-dense-ai/scientific-agent-skills) ⭐33k, MIT, auditada 2026-07-15; subset de 14 de 161 — el resto se instala bajo demanda)
 
