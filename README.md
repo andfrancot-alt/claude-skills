@@ -140,6 +140,8 @@ Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash
 
 ## Plugins instalados (fuera de este repo — viven en ~/.claude/plugins)
 
+- **security-guidance@claude-plugins-official** (oficial de Anthropic, v2.0.6) — revisión de seguridad automática del código que Claude escribe: patrón por edición (sin costo), review del diff al fin de turno y review agéntica en commits/push (requiere `claude-agent-sdk` en Python, instalado 2026-07-16). Solo actúa a fondo dentro de repos git. Reglas propias: `.claude/claude-security-guidance.md` y `.claude/security-patterns.yaml` por proyecto. Reinstalar: `claude plugin install security-guidance@claude-plugins-official`.
+
 - **codex@openai-codex** ([openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc), oficial de OpenAI, auditado 2026-07-16) — usar Codex desde Claude Code: `/codex:review`, `/codex:transfer`, review-gate opcional al Stop. Requiere `npm install -g @openai/codex` + cuenta OpenAI + `/codex:setup`. ⚠️ Al usarlo, código/diffs/contexto viajan a OpenAI. Reinstalar en otra máquina: `claude plugin marketplace add openai/codex-plugin-cc && claude plugin install codex@openai-codex`.
 
 ## Uso en otra máquina
