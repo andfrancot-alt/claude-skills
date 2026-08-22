@@ -126,6 +126,12 @@ Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash
 | process-mapper, capacity-planner | Operación: mapeo BPMN de procesos y planeación de capacidad (Erlang-C) — relevante para agenda/equipos de la clínica. |
 | financial-analyst, pricing-strategist, weekly-review | Finanzas, estrategia de precios y revisión semanal. |
 
+### Conducta de código (origen: [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) ⭐205k, auditada 2026-07-17)
+
+| Skill | Descripción |
+|-------|-------------|
+| [karpathy-guidelines](karpathy-guidelines/SKILL.md) | 4 reglas contra vicios de código LLM: pensar antes de codear, simplicidad primero, cambios quirúrgicos, metas verificables. Derivado con atribución del post de Karpathy. |
+
 ### Decisiones (origen: [aiwithremy/claude-skills-llm-council](https://github.com/aiwithremy/claude-skills-llm-council) ⭐1.6k, auditada 2026-07-15; sin licencia declarada)
 
 | Skill | Descripción |
