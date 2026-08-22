@@ -144,6 +144,8 @@ Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash
 
 - **codex@openai-codex** ([openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc), oficial de OpenAI, auditado 2026-07-16) — usar Codex desde Claude Code: `/codex:review`, `/codex:transfer`, review-gate opcional al Stop. Requiere `npm install -g @openai/codex` + cuenta OpenAI + `/codex:setup`. ⚠️ Al usarlo, código/diffs/contexto viajan a OpenAI. Reinstalar en otra máquina: `claude plugin marketplace add openai/codex-plugin-cc && claude plugin install codex@openai-codex`.
 
+- **notebooklm-connector@claude-code-zero** ([LeeJuOh/claude-code-zero](https://github.com/LeeJuOh/claude-code-zero), MIT, auditado 2026-07-17) — consultar/gestionar notebooks de NotebookLM desde Claude vía la extensión Claude in Chrome. ⚠️ Su subagente usa `permissionMode: bypassPermissions` sobre el Chrome real (acotado a 5 tools de navegador y guion rígido sobre notebooklm.google.com; no maneja credenciales — en login se detiene). Usar solo con notebooks propios. Reinstalar: `claude plugin marketplace add LeeJuOh/claude-code-zero && claude plugin install notebooklm-connector@claude-code-zero`.
+
 ## Uso en otra máquina
 
 ```sh
