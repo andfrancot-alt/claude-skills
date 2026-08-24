@@ -126,6 +126,21 @@ Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash
 | process-mapper, capacity-planner | Operación: mapeo BPMN de procesos y planeación de capacidad (Erlang-C) — relevante para agenda/equipos de la clínica. |
 | financial-analyst, pricing-strategist, weekly-review | Finanzas, estrategia de precios y revisión semanal. |
 
+### Seguridad ofensiva / pentesting (origen: [usestrix/strix](https://github.com/usestrix/strix) ⭐57k, Apache-2.0, auditada 2026-07-17)
+
+⚠️ **Uso autorizado únicamente**: correr Strix solo contra aplicaciones/APIs propias o con autorización escrita (p. ej. INFIRE). Ejecutar un pentest requiere Docker + una clave LLM (`STRIX_LLM` + `LLM_API_KEY`) o la plataforma cloud app.strix.ai. Instalar estas skills (markdown) no ejecuta nada; solo guían el uso de la herramienta.
+
+| Skill | Descripción |
+|-------|-------------|
+| penetration-testing-with-strix | Pentest general (web/API/código/URL) con agentes que prueban y explotan, no solo flaggean. |
+| web-app-penetration-testing, api-security-testing | Pentest específico de web app y de APIs (REST/GraphQL/gRPC). |
+| owasp-top-10-testing | Evaluación mapeada a OWASP Top 10:2025 y API Top 10. |
+| find-security-vulnerabilities-in-code | Revisión white-box del código con PoC en sandbox. |
+| fix-security-vulnerabilities-with-strix | Remediar hallazgos y re-escanear para verificar el fix. |
+| application-security-testing | AppSec de todo el producto con plan de remediación priorizado. |
+| ci-security-scanning-with-strix | Escaneo por PR en CI (GitHub/GitLab), SARIF. |
+| managed-pentesting-with-strix | Vía REST de app.strix.ai (sin Docker/clave local); reportes para SOC 2. |
+
 ### Conducta de código (origen: [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) ⭐205k, auditada 2026-07-17)
 
 | Skill | Descripción |
