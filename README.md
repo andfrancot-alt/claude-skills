@@ -141,6 +141,12 @@ Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash
 | ci-security-scanning-with-strix | Escaneo por PR en CI (GitHub/GitLab), SARIF. |
 | managed-pentesting-with-strix | Vía REST de app.strix.ai (sin Docker/clave local); reportes para SOC 2. |
 
+### Razonamiento (origen: [mrgoonie/claudekit-skills](https://github.com/mrgoonie/claudekit-skills), MIT, auditada 2026-07-18)
+
+| Skill | Descripción |
+|-------|-------------|
+| [sequential-thinking](sequential-thinking/SKILL.md) | Razonamiento paso a paso con revisión y ramificación. ⚠️ Requiere un MCP `reasoning` (`mcp__reasoning__sequentialthinking`) para funcionar plenamente; sin él es solo guía. |
+
 ### Conducta de código (origen: [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) ⭐205k, auditada 2026-07-17)
 
 | Skill | Descripción |
@@ -165,6 +171,8 @@ Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash
 
 - **codex@openai-codex** ([openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc), oficial de OpenAI, auditado 2026-07-16) — usar Codex desde Claude Code: `/codex:review`, `/codex:transfer`, review-gate opcional al Stop. Requiere `npm install -g @openai/codex` + cuenta OpenAI + `/codex:setup`. ⚠️ Al usarlo, código/diffs/contexto viajan a OpenAI. Reinstalar en otra máquina: `claude plugin marketplace add openai/codex-plugin-cc && claude plugin install codex@openai-codex`.
 
+- **superpowers@claude-plugins-official** (marketplace oficial; framework de Jesse Vincent/obra, ⭐281k, MIT, auditado 2026-07-18) — 14 skills de metodología de desarrollo: TDD, systematic-debugging, brainstorming, writing-plans, code-review, git-worktrees, dispatching-parallel-agents, verification-before-completion, etc. Sin red ni inyección.
+- **code-simplifier@claude-plugins-official** (oficial de Anthropic) — agente que simplifica código recién modificado preservando funcionalidad (complementa la skill `simplify`).
 - **notebooklm-connector@claude-code-zero** ([LeeJuOh/claude-code-zero](https://github.com/LeeJuOh/claude-code-zero), MIT, auditado 2026-07-17) — consultar/gestionar notebooks de NotebookLM desde Claude vía la extensión Claude in Chrome. ⚠️ Su subagente usa `permissionMode: bypassPermissions` sobre el Chrome real (acotado a 5 tools de navegador y guion rígido sobre notebooklm.google.com; no maneja credenciales — en login se detiene). Usar solo con notebooks propios. Reinstalar: `claude plugin marketplace add LeeJuOh/claude-code-zero && claude plugin install notebooklm-connector@claude-code-zero`.
 
 ## Uso en otra máquina
