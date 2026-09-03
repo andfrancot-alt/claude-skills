@@ -175,6 +175,10 @@ Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash
 - **code-simplifier@claude-plugins-official** (oficial de Anthropic) — agente que simplifica código recién modificado preservando funcionalidad (complementa la skill `simplify`).
 - **notebooklm-connector@claude-code-zero** ([LeeJuOh/claude-code-zero](https://github.com/LeeJuOh/claude-code-zero), MIT, auditado 2026-07-17) — consultar/gestionar notebooks de NotebookLM desde Claude vía la extensión Claude in Chrome. ⚠️ Su subagente usa `permissionMode: bypassPermissions` sobre el Chrome real (acotado a 5 tools de navegador y guion rígido sobre notebooklm.google.com; no maneja credenciales — en login se detiene). Usar solo con notebooks propios. Reinstalar: `claude plugin marketplace add LeeJuOh/claude-code-zero && claude plugin install notebooklm-connector@claude-code-zero`.
 
+## Servidores MCP (no son skills; en ~/.claude.json, ámbito usuario)
+
+- **context7** ([upstash/context7](https://github.com/upstash/context7) ⭐61k, MIT, auditado 2026-07-18) — documentación actualizada de librerías inyectada en contexto. Transporte HTTP: `https://mcp.context7.com/mcp` (elegido sobre npx local por el bug de `.cmd`/path-conv en Windows). Sin clave (rate limit básico; clave gratis opcional en context7.com/dashboard sube el límite). Envía nombres de librería/consultas, no código privado. Reinstalar: `claude mcp add --transport http context7 https://mcp.context7.com/mcp -s user`.
+
 ## Uso en otra máquina
 
 ```sh
