@@ -173,7 +173,12 @@ Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash
 
 - **superpowers@claude-plugins-official** (marketplace oficial; framework de Jesse Vincent/obra, ⭐281k, MIT, auditado 2026-07-18) — 14 skills de metodología de desarrollo: TDD, systematic-debugging, brainstorming, writing-plans, code-review, git-worktrees, dispatching-parallel-agents, verification-before-completion, etc. Sin red ni inyección.
 - **code-simplifier@claude-plugins-official** (oficial de Anthropic) — agente que simplifica código recién modificado preservando funcionalidad (complementa la skill `simplify`).
+- **ponytail@ponytail** ([DietrichGebert/ponytail](https://github.com/dietrichgebert/ponytail) ⭐131k, MIT, marketplace oficial, auditado 2026-07-18) — filosofía "código mínimo": cuestiona si el código necesita existir, reutiliza antes de escribir, stdlib antes que dependencias. Sin red ni inyección. Activo en toda tarea de código; ajustar con `/ponytail lite|full|ultra`.
 - **notebooklm-connector@claude-code-zero** ([LeeJuOh/claude-code-zero](https://github.com/LeeJuOh/claude-code-zero), MIT, auditado 2026-07-17) — consultar/gestionar notebooks de NotebookLM desde Claude vía la extensión Claude in Chrome. ⚠️ Su subagente usa `permissionMode: bypassPermissions` sobre el Chrome real (acotado a 5 tools de navegador y guion rígido sobre notebooklm.google.com; no maneja credenciales — en login se detiene). Usar solo con notebooks propios. Reinstalar: `claude plugin marketplace add LeeJuOh/claude-code-zero && claude plugin install notebooklm-connector@claude-code-zero`.
+
+## gstack — framework externo, NO versionado aquí (auditado 2026-07-18)
+
+[garrytan/gstack](https://github.com/garrytan/gstack) (⭐132k, MIT) es el setup completo de Garry Tan: 55 skills (`/qa`, `/review`, `/cso`, `/autoplan`, `/ship`, etc.), navegador Chromium propio, `gbrain` opcional. Instalado en `~/.claude/skills/gstack` como **repo git vivo separado** (se actualiza con `/gstack-upgrade`, no con `git push` de este repo) — por eso `gstack/` está en `.gitignore`. Requiere Bun (instalado). Registró un hook `gstack-timeline-stop` en `~/.claude/settings.json` (backup automático creado; desinstalar: `~/.claude/skills/gstack/bin/gstack-settings-hook remove-source --source gstack-timeline-stop && rm -rf ~/.claude/skills/gstack`). Auditoría: sin inyección real, manejo ejemplar de credenciales, ledger de auditoría de red propio (`~/.gstack/security/egress.jsonl`).
 
 ## Servidores MCP (no son skills; en ~/.claude.json, ámbito usuario)
 
