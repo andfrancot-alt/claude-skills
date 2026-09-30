@@ -97,6 +97,12 @@ Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash
 | [impeccable](https://impeccable.style) ([pbakaus/impeccable](https://github.com/pbakaus/impeccable) ⭐73k, plugin oficial) | 24 comandos `/impeccable polish\|audit\|critique\|...` para pulir frontend. ⚠️ Descarga un binario compilado en el primer uso — verificado: solo desde releases oficiales de GitHub, con SHA256 obligatorio (falla si no puede verificar). Autor: Paul Bakaus. |
 | design-skill-{minimal,modern,clean,professional,corporate,enterprise,premium,refined,friendly,contemporary,sleek,spacious,shadcn} ([bergside/awesome-design-skills](https://github.com/bergside/awesome-design-skills) ⭐3k) | Subset de 13/67 sistemas de diseño (se omitieron estéticas de nicho: pacman, tetris, matrix, brutalism, retro, etc.). Puro markdown, cero red, cero scripts — la auditoría más limpia de la sesión. |
 
+### Cine y juegos procedurales ([kuhnhomeuk-cell/procedural-film](https://github.com/kuhnhomeuk-cell/procedural-film) ⭐473, MIT, auditado 2026-09-30)
+
+| Skill | Descripción |
+|-------|-------------|
+| [procedural-film](procedural-film/SKILL.md) | Convierte un tema en un cortometraje de ~30s dibujado y musicalizado 100% en JavaScript (modos: drawn/photo-doodle/retro), o en un juego de plataformas estilo NES jugable en navegador. Autor individual, repo joven — pero con disciplina de seguridad notable: trae un auto-test (`no-network.cjs`) que verifica que su suite no hace ninguna llamada de red, y su script de deploy solo invoca el CLI oficial de Vercel con garantía de no sobrescribir proyectos existentes. Solo se instaló `skills/procedural-film/` (no los 31 MB de demos del repo). Requiere `npm install` (Playwright) en su carpeta antes de renderizar. |
+
 ### Herramientas locales envueltas en skill propia (repos oficiales verificados; todo procesa local)
 
 | Skill | Descripción |
