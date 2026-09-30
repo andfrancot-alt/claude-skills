@@ -183,6 +183,7 @@ Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash
 
 ## Servidores MCP (no son skills; en ~/.claude.json, ámbito usuario)
 
+- **n8n-mcp** ([czlonkowski/n8n-mcp](https://github.com/czlonkowski/n8n-mcp) ⭐23k, MIT, auditado 2026-09-30) — documentación y construcción de workflows n8n (nodos, validación, plantillas). Modo documentación (sin n8n propio conectado). Telemetría honesta y documentada (`PRIVACY.md` público): pseudónima, opt-out por `DO_NOT_TRACK`/config, workflows sanitizados antes de enviar (créditos/URLs/tokens redactados) — código de sanitización público. Para conectar un n8n real: añadir `N8N_API_URL`/`N8N_API_KEY` al comando. Reinstalar: `MSYS_NO_PATHCONV=1 claude mcp add n8n-mcp -s user -e MCP_MODE=stdio -e LOG_LEVEL=error -e DISABLE_CONSOLE_OUTPUT=true -- cmd /c npx -y n8n-mcp`.
 - **context7** ([upstash/context7](https://github.com/upstash/context7) ⭐61k, MIT, auditado 2026-07-18) — documentación actualizada de librerías inyectada en contexto. Transporte HTTP: `https://mcp.context7.com/mcp` (elegido sobre npx local por el bug de `.cmd`/path-conv en Windows). Sin clave (rate limit básico; clave gratis opcional en context7.com/dashboard sube el límite). Envía nombres de librería/consultas, no código privado. Reinstalar: `claude mcp add --transport http context7 https://mcp.context7.com/mcp -s user`.
 
 ## Uso en otra máquina
