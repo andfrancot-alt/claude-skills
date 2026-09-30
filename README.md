@@ -88,6 +88,15 @@ Esta carpeta vive en `~/.claude/skills/` — Claude Code carga automáticamente 
 
 Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash`), `heygen` (deprecada), y las acopladas al framework HyperFrames (`music-to-video`, `website-to-video`, `motion-graphics`, `kling-official`, `video-toolkit`, `remotion`), que no funcionan fuera del repo original.
 
+### Diseño y "gusto" (auditadas 2026-09-30, sin red/inyección salvo lo indicado)
+
+| Skill/origen | Descripción |
+|-------|-------------|
+| [taste-skill](taste-skill/SKILL.md) ([leonxlnx/taste-skill](https://github.com/leonxlnx/taste-skill) ⭐91k) | Anti-slop: evita el "look genérico de IA" en landing pages/portfolios/rediseños. Subset de 8/13 instalado (se omitieron variantes específicas de GPT, Codex y Google Stitch, y la v1 obsoleta). |
+| imagegen-frontend-web, imagegen-frontend-mobile, minimalist-skill, output-skill, redesign-skill, soft-skill, brandkit | Del mismo paquete: dirección de imagegen, anti-truncamiento de código, auditoría/upgrade de diseño existente, criterio de agencia, kits de marca. |
+| [impeccable](https://impeccable.style) ([pbakaus/impeccable](https://github.com/pbakaus/impeccable) ⭐73k, plugin oficial) | 24 comandos `/impeccable polish\|audit\|critique\|...` para pulir frontend. ⚠️ Descarga un binario compilado en el primer uso — verificado: solo desde releases oficiales de GitHub, con SHA256 obligatorio (falla si no puede verificar). Autor: Paul Bakaus. |
+| design-skill-{minimal,modern,clean,professional,corporate,enterprise,premium,refined,friendly,contemporary,sleek,spacious,shadcn} ([bergside/awesome-design-skills](https://github.com/bergside/awesome-design-skills) ⭐3k) | Subset de 13/67 sistemas de diseño (se omitieron estéticas de nicho: pacman, tetris, matrix, brutalism, retro, etc.). Puro markdown, cero red, cero scripts — la auditoría más limpia de la sesión. |
+
 ### Herramientas locales envueltas en skill propia (repos oficiales verificados; todo procesa local)
 
 | Skill | Descripción |
