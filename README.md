@@ -97,6 +97,15 @@ Excluidas de OpenMontage en la auditoría: `media-use` (instalador `curl \| bash
 | [impeccable](https://impeccable.style) ([pbakaus/impeccable](https://github.com/pbakaus/impeccable) ⭐73k, plugin oficial) | 24 comandos `/impeccable polish\|audit\|critique\|...` para pulir frontend. ⚠️ Descarga un binario compilado en el primer uso — verificado: solo desde releases oficiales de GitHub, con SHA256 obligatorio (falla si no puede verificar). Autor: Paul Bakaus. |
 | design-skill-{minimal,modern,clean,professional,corporate,enterprise,premium,refined,friendly,contemporary,sleek,spacious,shadcn} ([bergside/awesome-design-skills](https://github.com/bergside/awesome-design-skills) ⭐3k) | Subset de 13/67 sistemas de diseño (se omitieron estéticas de nicho: pacman, tetris, matrix, brutalism, retro, etc.). Puro markdown, cero red, cero scripts — la auditoría más limpia de la sesión. |
 
+### Animación — librerías (de [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage), MIT; auditadas 2026-10-05, un solo SKILL.md cada una, sin scripts ni red)
+
+| Skill | Descripción |
+|-------|-------------|
+| [framer-motion](framer-motion/SKILL.md) | Los 12 principios de animación de Disney aplicados con Framer Motion en React. Nota: la librería se renombró a Motion (`motion/react`); el paquete `framer-motion` sigue funcionando. |
+| [lottie-bodymovin](lottie-bodymovin/SKILL.md) | Los 12 principios con Lottie (animaciones exportadas desde After Effects). |
+| [canvas-procedural-animation](canvas-procedural-animation/SKILL.md) | p5.js/canvas: partículas, clima, squash/stretch, ciclos de caminata, movimiento ambiental. |
+| [svg-character-animation](svg-character-animation/SKILL.md) | Rigs de personajes SVG con GSAP, transforms CSS y Remotion/HyperFrames. |
+
 ### Cine y juegos procedurales ([kuhnhomeuk-cell/procedural-film](https://github.com/kuhnhomeuk-cell/procedural-film) ⭐473, MIT, auditado 2026-09-30)
 
 | Skill | Descripción |
